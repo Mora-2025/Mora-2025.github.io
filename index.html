@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mora: Enabling Generalist Video Generation via A Multi-Agent Framework</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Mora: Enabling Generalist Video Generation via A Multi-Agent Framework</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Anonymous authors</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Text-to-video generation has made significant strides, but replicating the capabilities of advanced systems like OpenAI's Sora remains challenging due to their closed-source nature. Existing open-source methods struggle to achieve comparable performance, often hindered by ineffective agent collaboration and inadequate training data quality. In this paper, we introduce Mora, a novel multi-agent framework that leverages existing open-source modules to replicate Sora's functionalities. We address these fundamental limitations by proposing three key techniques: (1) multi-agent fine-tuning with a self-modulation factor to enhance inter-agent coordination, (2) a data-free training strategy that uses large models to synthesize training data, and (3) a human-in-the-loop mechanism combined with multimodal large language models for data filtering to ensure high-quality training datasets. Our comprehensive experiments on six video generation tasks demonstrate that Mora achieves performance comparable to Sora on VBench \cite{huang2024vbench}, outperforming existing open-source methods across various tasks. Specifically, in the text-to-video generation task, Mora achieved a Video Quality score of 0.800, surpassing Sora's 0.797 and outperforming all other baseline models across six key metrics. Additionally, in the image-to-video generation task, Mora achieved a perfect Dynamic Degree score of 1.00, demonstrating exceptional capability in enhancing motion realism and achieving higher Imaging Quality than Sora. These results highlight the potential of collaborative multi-agent systems and human-in-the-loop mechanisms in advancing text-to-video generation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<style>
+  .centered-title {
+    text-align: center;
+  }
+</style>
+
+
+<h2 class="title is-3 centered-title">Text to Video<br></h2>
+
+<div class="video-container">
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video1.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video2.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video3.mp4" type="video/mp4">
+      </video>
+  </div>
+</div>
+
+
+<h2 class="title is-3 centered-title">Image to Video<br></h2>
+
+<div class="video-container">
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video1.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video2.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video3.mp4" type="video/mp4">
+      </video>
+  </div>
+</div>
+
+
+<h2 class="title is-3 centered-title">Extend Video<br></h2>
+
+<div class="video-container">
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video1.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video2.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video3.mp4" type="video/mp4">
+      </video>
+  </div>
+</div>
+
+
+<h2 class="title is-3 centered-title">Video to Video Editing<br></h2>
+
+<div class="video-container">
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video1.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video2.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video3.mp4" type="video/mp4">
+      </video>
+  </div>
+</div>
+
+
+<h2 class="title is-3 centered-title">Connect Videos<br></h2>
+
+<div class="video-container">
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video1.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video2.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video3.mp4" type="video/mp4">
+      </video>
+  </div>
+</div>
+
+<h2 class="title is-3 centered-title">Simulate Digital Worlds<br></h2>
+
+<div class="video-container">
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video1.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video2.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="video-item">
+      <video controls width="100%">
+          <source src="video3.mp4" type="video/mp4">
+      </video>
+  </div>
+</div>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The source code is from <a herf="https://github.com/nerfies/nerfies.github.io">HERE</a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
