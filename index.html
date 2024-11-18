@@ -183,17 +183,17 @@
 <div class="media-container">
   <div class="video-item">
       <video controls width="100%">
-          <source src="video/car_origin.mp4" type="video/mp4">
+          <source src="video/car_origin.mp4">
       </video>
       <p>Input Video</p>
   </div>
-  <div class="media-item video-item" style="width: 38%;">
+  <div class="media-item video-item">
       <video controls width="100%">
           <source src="video\EulerAncestralDiscrete_1_gs7.5_s1002.mp4" type="video/mp4">
       </video>
       <p>Open-Sora-Plan<br></p>
   </div>
-  <div class="media-item video-item" style="width: 38%;">
+  <div class="media-item video-item">
     <video controls width="100%">
         <source src="video\EulerAncestralDiscrete_0_gs7.5_s1001.mp4" type="video/mp4">
     </video>
@@ -205,18 +205,25 @@
 <h2 class="title is-3 centered-title">Connect Videos<br></h2>
 
 <div class="media-container">
-  <!-- <div class="media-item video-item">
+  <div class="media-item video-item" style="width: 25%;">
       <video controls width="100%">
-          <source src="video1.mp4" type="video/mp4">
+          <source src="video/b0.mp4" type="video/mp4">
       </video>
-  </div> -->
-  <div class="media-item video-item" style="width: 38%;">
+      <p>First Half<br></p>
+  </div>
+  <div class="media-item video-item" style="width: 25%;">
+      <video controls width="100%">
+          <source src="video/b2.mp4" type="video/mp4">
+      </video>
+      <p>Second Half<br></p>
+  </div>
+  <div class="media-item video-item" style="width: 25%;">
       <video controls width="100%">
           <source src="video\v2vcas_O.mp4" type="video/mp4">
       </video>
       <p>Open-Sora-Plan<br></p>
   </div>
-  <div class="media-item video-item" style="width: 38%;">
+  <div class="media-item video-item" style="width: 25%;">
       <video controls width="100%">
           <source src="video\v2vcas.mp4" type="video/mp4">
       </video>
@@ -226,9 +233,10 @@
 
 
 <style>
-  .video-item.special-video video {
-      height: 352px; /* 固定高度为 352 像素 */
-      object-fit: cover; /* 裁剪视频内容以适应容器 */
+  .media-item.special-video video {
+      width: 60%; /* 固定高度为 352 像素 */
+      height: auto;
+      object-fit: cover; /* 裁剪视频内容以适应容器 */;
   }
 </style>
 
